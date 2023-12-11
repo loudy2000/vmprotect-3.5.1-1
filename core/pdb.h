@@ -1,4 +1,4 @@
-/* MS has stored all its debug information in a set of structures
+п»ї/* MS has stored all its debug information in a set of structures
  * which has been rather consistent across the years (ie you can grasp
  * some continuity, and not so many drastic changes).
  *
@@ -2247,7 +2247,7 @@ typedef struct OMFSourceModule
     unsigned long   baseSrcFile[1];
 } OMFSourceModule;
 
-//портировано из WINEDUMP с сохранением большинства имен
+//й•±з—±жЎЉй’је›—?жЎ¤ WINEDUMP ?иЂ¦иє”е›—е±™жЎў?зЉ·жњ¦о‰»зњ€ињ®?жЎЃе±™
 static const char       pdb2[] = "Microsoft C/C++ program database 2.00";
 static const char       pdb7[] = "Microsoft C/C++ MSF 7.00";
 

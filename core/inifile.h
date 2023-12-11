@@ -1,4 +1,4 @@
-#ifndef INIFILE_H
+п»ї#ifndef INIFILE_H
 #define INIFILE_H
 
 long StrToIntDef(const char *str, long default_value);
@@ -43,7 +43,7 @@ private:
 
 class LanguageManager;
 
-// временный костыль для проверки многопроцессорной сборки
+// жЂµе±ђе±™зќ‡?и§ђиЂ±оЋ?жЅ†пЈµ й•ій’је±¦и§‡ зҐ‰й’Ѕй“’з—¤йІҐиЂЁй“•зњЌ?иҐ»й“•и§‡
 #ifdef VMP_GNU
 #define MUTEX_FILE "/tmp/VMProtect.dat.mutex"
 #endif
@@ -60,7 +60,7 @@ struct GlobalLocker
 	GlobalLocker()
 	{
 #ifdef VMP_GNU
-		// многопоточной защиты здесь нет, только многопроцессная и от рекурсии
+		// зҐ‰й’Ѕй“’й“—й“џзњЌ?зЋЋо‹™ић“ зЋџзѕј?з¤¤? иќѕжњ¦и§ђ зҐ‰й’Ѕй“’з—¤йІҐиЂЁзЈ¬пЈµ ?й“— з–±з‰¦зѓжўѓ
 		++depth;
 		if (depth == 1)  
 		{

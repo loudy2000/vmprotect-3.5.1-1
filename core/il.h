@@ -1,5 +1,6 @@
 #ifndef IL_H
 #define IL_H
+#include <map>
 
 enum ILCommandType {
 	icUnknown, icByte, icWord, icDword, icQword, icComment, icData, icCase,

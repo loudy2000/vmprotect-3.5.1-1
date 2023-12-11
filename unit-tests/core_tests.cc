@@ -1,4 +1,4 @@
-#include "../runtime/common.h"
+п»ї#include "../runtime/common.h"
 #include "../runtime/crypto.h"
 #include "../core/objects.h"
 #include "../core/osutils.h"
@@ -77,11 +77,11 @@ TEST(CoreTest, IsUniqueWatermark)
 TEST(CoreTest, UTF8Validator)
 {
 	ASSERT_TRUE(os::ValidateUTF8(std::string()));
-	ASSERT_TRUE(os::ValidateUTF8(os::ToUTF8(os::unicode_string(L"кириллица"))));
-	ASSERT_FALSE(os::ValidateUTF8(std::string("кириллица 1251")));
+	ASSERT_TRUE(os::ValidateUTF8(os::ToUTF8(os::unicode_string(L"и§‡з—‚и…љжЎ·?"))));
+	ASSERT_FALSE(os::ValidateUTF8(std::string("и§‡з—‚и…љжЎ·?1251")));
 }
 TEST(CoreTest, FromACP)
 {
-	ASSERT_TRUE(os::FromACP(std::string("кириллица 1251")) == os::unicode_string(L"кириллица 1251"));
+	ASSERT_TRUE(os::FromACP(std::string("и§‡з—‚и…љжЎ·?1251")) == os::unicode_string(L"и§‡з—‚и…љжЎ·?1251"));
 }
 #endif
